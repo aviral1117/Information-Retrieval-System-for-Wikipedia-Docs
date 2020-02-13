@@ -16,7 +16,7 @@ from nltk import word_tokenize, pos_tag
 from collections import defaultdict
 
 c = 'A' # Helper variable
-f = open('wiki_05','r', encoding="utf8") #add appropriate path for the file
+f = open('wiki_05','r', encoding="utf8") #-add appropriate path for the file
 docs = f.read()
 f.close()
 Parsed_Text = BeautifulSoup(docs, 'html.parser').get_text()
